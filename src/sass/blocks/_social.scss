@@ -21,7 +21,7 @@
         transform: rotate(90deg);
         transition: 0.5s all;
         &:hover {
-            transform: rotate(90deg) scale(1.7);
+            transform: rotate(180deg) scale(1.7);
             svg path {
                 fill: $main-color;
             }

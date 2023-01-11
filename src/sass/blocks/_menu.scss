@@ -68,6 +68,12 @@
         bottom: 50px;
         left: 50%;
         transform: translateX(-50%);
+        a {
+            transition: all 1s;
+            &:hover {                
+                transform: rotate(360deg) scale(1.5);
+            }
+        }
     }
     &__overlay {
         position: fixed;

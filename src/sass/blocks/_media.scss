@@ -24,6 +24,13 @@
         }
     }
 
+    .resume {
+        &__wrapper {
+            padding-left: 0;
+            column-gap: 110px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -55,11 +62,27 @@
             grid-template-columns: 40px auto;
         }
     }
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2,350px);
+            column-gap: 20px;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
     .container {
         max-width: 540px;
+    }
+
+    .title {
+        &__subtitle {
+            font-size: 30px;
+        }
+    }
+
+    .divider {
+        margin-top: 10px;
     }
 
     .promo {
@@ -84,12 +107,28 @@
             column-gap: 20px;
         }
     }
+
+    .resume {
+        padding-top: 40px;
+        &__wrapper {
+            padding-top: 40px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+            row-gap: 40px;
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
     .container {
         width: 100%;
         padding-inline: 10px;
+    }
+
+    .title {
+        &__subtitle {
+            font-size: 24px;
+        }
     }
 
     .hamburger {

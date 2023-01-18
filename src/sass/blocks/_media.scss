@@ -99,6 +99,13 @@
             column-gap: 30px;
         }
     }
+    .price {
+        &__wrapper {
+            padding-inline: 0;  
+            grid-template-columns: repeat(auto-fit, 350px);
+            justify-content: space-between;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -170,6 +177,12 @@
             gap: 20px;
         }
     }
+    .price {
+        padding-top: 40px;
+        &__wrapper {
+            justify-content: center;
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -227,6 +240,12 @@
             &-line {
                 width: 100%;
             }
+        }
+    }
+    .price {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 295px);
+            justify-content: center;
         }
     }
 }

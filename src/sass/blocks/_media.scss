@@ -42,6 +42,16 @@
             justify-content: space-evenly;
         }
     }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            justify-content: center;
+            .plans, .mac {
+                grid-column: unset;
+                grid-row: unset;
+            }
+        }
+    }
 
 }
 
@@ -143,6 +153,7 @@
         padding-top: 40px;
         &__wrapper {
             margin-top: 20px;
+            gap: 20px;
         }
         &__ratings {
             grid-template-columns: repeat(2, 260px);
@@ -150,6 +161,13 @@
             &-line {
                 width: 100%;
             }
+        }
+    }
+    .portfolio {
+        padding-top: 40px;
+        &__wrapper {
+            margin-top: 40px;
+            gap: 20px;
         }
     }
 }
